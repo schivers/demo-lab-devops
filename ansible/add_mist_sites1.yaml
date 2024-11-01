@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: local
+  
+  tasks:
+
+  # Example  - Executes the ./scripts/orgs/import_sites.py -f vars/sites.csv --org_id=e92db139-f481-4e64-a674-2d521d106894 --google_api_key=AIzaSyC1qzntcGzye0UZ9amxxGQfAoq2kRcqdX8
+  - name: Execute Python Script locally
+    command: /home/administrator/scripts/orgs/import_sites.py -e /home/administrator/.mist_env -f /home/administrator/scripts/vars/sites.csv --org_id=e92db139-f481-4e64-a674-2d521d106894 --google_api_key=AIzaSyC1qzntcGzye0UZ9amxxGQfAoq2kRcqdX8
+    become: true
+    become_user: root

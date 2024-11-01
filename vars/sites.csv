@@ -1,0 +1,3 @@
+#name,address,sitegroup_names,vars
+Juniper France, "41 rue de Villiers, Neuilly sur Seine, France", "test1, test2","vlan_guest:3,vlan_corp:2"
+Shaun UK, "144 church farm road, emersons green, bristol, United Kingdom", "test1, test2","vlan_guest:3,vlan_corp:2"

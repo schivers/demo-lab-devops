@@ -1,0 +1,60 @@
+INFO:__main__:"mistapi" package version 0.44.1 is required, you are currently using version 0.52.4.
+DEBUG:__main__:opts: -f is /home/administrator/scripts/vars/sites.csv
+DEBUG:__main__:opts: -e is /home/administrator/.mist_env
+DEBUG:__main__:opts: --org_id is e92db139-f481-4e64-a674-2d521d106894
+DEBUG:__main__:opts: --google_api_key is *****************
+DEBUG:__main__:opts: --org_name is Demo-lab
+INFO:mistapi:mistapi:init:package version 0.52.4
+DEBUG:mistapi:apisession:_load_env:loading settings from /home/administrator/.mist_env
+DEBUG:mistapi:apisession:set_cloud
+DEBUG:mistapi:apisession:set_cloud:Mist Cloud configured to api.eu.mist.com
+DEBUG:mistapi:apisession:set_api_token
+INFO:mistapi:apisession:set_api_token:found 1 API Tokens
+DEBUG:mistapi:apisession:_check_api_tokens
+INFO:mistapi:apisession:_check_api_tokens:there is only 1 API token. No check required
+INFO:mistapi:apisession:set_api_token:API Token configured
+DEBUG:mistapi:apisession:__init__: API Session initialized
+DEBUG:mistapi:apisession:login
+DEBUG:mistapi:apisession:login:not authenticated yet
+DEBUG:mistapi:apisession:_set_authenticated
+DEBUG:mistapi:apisession:_set_authenticated:authentication_status is True
+INFO:mistapi:apisession:_set_authenticated: session is now "Authenticated"
+DEBUG:mistapi:apisession:get_authentication_status:return True
+INFO:mistapi:apisession:login:authenticated
+DEBUG:mistapi:apisession:_getself
+INFO:mistapi:apisession:_getself: sending GET request to "/api/v1/self"
+DEBUG:mistapi:apirequest:_url:https://api.eu.mist.com/api/v1/self
+DEBUG:mistapi:apirequest:_gen_query:processing query None
+DEBUG:mistapi:apirequest:_gen_query:generated query:?
+INFO:mistapi:apirequest:mist_get:sending request to https://api.eu.mist.com/api/v1/self
+DEBUG:mistapi:apirequest:mist_get:request headers:{'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': '***hidden***'}
+INFO:mistapi:apiresponse:__init__:response status code: 200
+DEBUG:mistapi:apiresponse:_check_next
+DEBUG:mistapi:apiresponse:__init__:HTTP response processed
+INFO:mistapi:apisession:_getself:authentication Ok. Processing account privileges
+INFO:mistapi:apisession:_getself:account used:  
+DEBUG:mistapi:apirequest:_url:https://api.eu.mist.com/api/v1/orgs/e92db139-f481-4e64-a674-2d521d106894
+DEBUG:mistapi:apirequest:_gen_query:processing query {}
+DEBUG:mistapi:apirequest:_gen_query:generated query:?
+INFO:mistapi:apirequest:mist_get:sending request to https://api.eu.mist.com/api/v1/orgs/e92db139-f481-4e64-a674-2d521d106894
+DEBUG:mistapi:apirequest:mist_get:request headers:{'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': '***hidden***'}
+INFO:mistapi:apiresponse:__init__:response status code: 200
+DEBUG:mistapi:apiresponse:_check_next
+DEBUG:mistapi:apiresponse:__init__:HTTP response processed
+INFO:__main__:Loading Geocoder: Google: Success
+DEBUG:mistapi:apirequest:_url:https://api.eu.mist.com/api/v1/orgs/e92db139-f481-4e64-a674-2d521d106894/sites
+DEBUG:mistapi:apirequest:_gen_query:processing query {'limit': 1000, 'page': 1}
+DEBUG:mistapi:apirequest:_gen_query:generated query:?limit=1000&page=1&
+INFO:mistapi:apirequest:mist_get:sending request to https://api.eu.mist.com/api/v1/orgs/e92db139-f481-4e64-a674-2d521d106894/sites?limit=1000&page=1
+DEBUG:mistapi:apirequest:mist_get:request headers:{'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': '***hidden***'}
+INFO:mistapi:apiresponse:__init__:response status code: 200
+DEBUG:mistapi:apiresponse:_check_next
+DEBUG:mistapi:apiresponse:__init__:HTTP response processed
+INFO:__main__:Retrieving Sites from Org: Success
+WARNING:__main__:_check_sites:site Juniper France already exists. Won't be created...
+WARNING:__main__:_check_sites:site Shaun UK already exists. Won't be created...
+INFO:__main__:Preparing Sites Import
+INFO:__main__:Validating Sites data
+INFO:__main__:Validating Sites data: Success
+INFO:__main__:Creating Sites
+INFO:__main__:Site Import Done
